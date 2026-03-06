@@ -1,0 +1,68 @@
+most cinematicpriority1 - editable content map
+
+1) Global meta + title
+- _nuxt/9331327.js
+  - head title ("Korty EO")
+  - meta description
+  - og:title, og:description, og:image
+  - favicon link
+- _nuxt/manifest.8cae53a1.json
+  - name/short_name/description used by PWA
+
+2) HTML entry shells (preloader + basic meta)
+- index.html
+- profile/index.html
+- archive/index.html
+  - preloader text ("KORTY ENIOLA")
+  - title/description tags in the static HTML
+
+3) Landing page (home /)
+- _nuxt/763368b.js
+  - header links (Profile, Archive)
+  - hero name + role text
+  - hover cards labels (VLOGS + INTERVIEWS, Video Mashups, Modelling, etc.)
+  - hover card URLs (YouTube/Instagram)
+  - hover card images (assetUrl /new_images/img101.jpg, img102.jpg, img103.jpg)
+  - mobile landing text (username, role, short bio)
+
+4) Profile page (/profile)
+- _nuxt/3ac11fa.js
+  - hero title, captions, dates, byline
+  - headline marquee text
+  - intro bio paragraph(s)
+  - editorial quotes and story text
+  - work section headings + descriptions + company/project names
+  - CTA and footer copy
+  - social links
+  - many image references (/new_images/img53.jpg, img54.jpg, ...)
+
+5) Archive page (/archive)
+- _nuxt/842b1ec.js
+  - archive intro paragraph
+  - quote text
+  - navigation labels (Profile, Close, Go to Home)
+  - archive images (many /new_images/img67.jpg - img98.jpg)
+
+6) Credits modal + acknowledgements
+- _nuxt/30d1d07.js
+  - "Who made this site" names and links
+  - type setting / credits / content removal text
+  - "A fansite for Ethan Hunt" and year
+  - list of used works/handles
+
+7) Images and media assets
+- new_images/ (primary visuals used across pages)
+- images/ (older assets)
+- _nuxt/icons/ (app icons)
+- favicon.ico (root)
+
+8) Reference dumps (not used by runtime)
+- currentprofiledata.txt, profiledat.txt
+  - text exports from previous content; useful for copy/paste but not loaded
+
+Quick conversion checklist
+- Replace name, role, bio, and key dates in _nuxt/3ac11fa.js and _nuxt/763368b.js.
+- Update social/profile links (YouTube/Instagram/Twitter) in _nuxt/763368b.js and _nuxt/3ac11fa.js.
+- Swap images by replacing files in new_images/ (keep same filenames) or by editing image paths in the JS bundles.
+- Update meta title/description/og image in _nuxt/9331327.js and manifest.8cae53a1.json.
+- If you do not want the credits modal, edit or remove it in _nuxt/30d1d07.js.

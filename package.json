@@ -1,0 +1,11 @@
+{
+  "name": "korty-clone",
+  "version": "1.0.0",
+  "description": "Static clone of kortyeo.madebynull.com",
+  "scripts": {
+    "start": "serve -l 1001"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
