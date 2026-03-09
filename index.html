@@ -11,5 +11,19 @@
       SAMARJEETH <br data-v-4d90812a=""/>
       RAJKUMAR
     </h2></div></div> <!-- --> <div class="c-exit" data-v-35bf744c="" data-v-43b0b724=""><h1 class="ov-h" data-v-35bf744c=""><span class="exit-span" data-v-35bf744c="">S</span> <span class="fraunces exit-span" data-v-35bf744c="">R</span></h1></div></div></div></div><script defer="" src="./_nuxt/static/1654278739/profile/state.js"></script><script defer="" src="./_nuxt/8a33995.js"></script><script defer="" src="./_nuxt/789d0f7.js"></script><script defer="" src="./_nuxt/9331327.js"></script><script defer="" src="./_nuxt/30d1d07.js"></script>
+<script>
+// Force-skip preloader after 8 seconds to prevent Vercel hang
+setTimeout(function() {
+  var preloader = document.querySelector('.c-preloader');
+  if (preloader && preloader.style.display !== 'none') {
+    console.log('Preloader timeout - forcing content display');
+    preloader.style.display = 'none';
+    // Try to trigger Nuxt store update if available
+    if (window.$nuxt && window.$nuxt.$store) {
+      window.$nuxt.$store.commit('updateImagesLoaded', true);
+    }
+  }
+}, 8000);
+</script>
 </body>
 </html>
