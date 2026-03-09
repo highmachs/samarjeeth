@@ -52,6 +52,29 @@ coverage/
 # TypeScript
 *.tsbuildinfo
 
-# Misc
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Archive / backup outputs
+*.bak
+*.tmp
+*.temp
+
+# Tooling and package manager noise
+package-lock.json
+pnpm-lock.yaml
+
+# Local development overrides
+.idea/
+*.local
 
 # safe to add any other files you want ignored here
